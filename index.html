@@ -365,6 +365,145 @@
       Cada cor apresenta o código HEX, RGB e HSL agrupados para facilitar a aplicação no código.
     </p>
   </section>
+  <section style="background:#fff;padding:30px 16px;margin-top:36px;border-radius:10px;box-shadow:0 4px 20px rgba(146,123,105,0.06);">
+  <h2>Guia de espaçamento, bordas, grid e ícones</h2>
+
+  <h3 style="margin-top:16px;">Escala de Espaçamento</h3>
+  <table style="width:100%;max-width:520px;border-collapse:collapse;font-size:16px;">
+    <thead><tr style="background:#f6f2ed;">
+      <th>Token</th><th>Pixels</th><th>REM</th><th>Uso recomendado</th></tr></thead>
+    <tbody>
+      <tr><td>xs</td><td>4px</td><td>0.25rem</td><td>Linhas, itens pequenos, divisores</td></tr>
+      <tr><td>sm</td><td>8px</td><td>0.5rem</td><td>Padding menor, espaçamento entre componentes pequenos</td></tr>
+      <tr><td>md</td><td>12px</td><td>0.75rem</td><td>Paddings entre ícones/textos ou grupos de elementos</td></tr>
+      <tr><td>base</td><td>16px</td><td>1rem</td><td>Margem/base de layout, grids</td></tr>
+      <tr><td>lg</td><td>24px</td><td>1.5rem</td><td>Entre cards, seções</td></tr>
+      <tr><td>xl</td><td>32px</td><td>2rem</td><td>Entre blocos principais ou grandes áreas</td></tr>
+      <tr><td>xxl</td><td>48px</td><td>3rem</td><td>Para banners ou headers de destaque</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top:26px;">Escala de Bordas (Radius)</h3>
+  <table style="width:100%;max-width:420px;border-collapse:collapse;font-size:16px;">
+    <thead><tr style="background:#f6f2ed;">
+      <th>Token</th><th>Pixels</th><th>Uso</th></tr></thead>
+    <tbody>
+      <tr><td>xs</td><td>2px</td><td>Campos de formulário, tags</td></tr>
+      <tr><td>sm</td><td>4px</td><td>Botões, campos, modals</td></tr>
+      <tr><td>md</td><td>8px</td><td>Cards, áreas principais</td></tr>
+      <tr><td>lg</td><td>16px</td><td>Hero, banners, containers amplos</td></tr>
+      <tr><td>circle</td><td>50% ou full</td><td>Avatar, botões circulares</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top:26px;">Sistema de Grid Layout</h3>
+  <ul>
+    <li><b>Desktop:</b> 12 colunas – Gutter: 24px – Margem: 32px</li>
+    <li><b>Tablet:</b> 8 colunas – Gutter: 16px – Margem: 16px</li>
+    <li><b>Mobile:</b> 4 colunas – Gutter: 8px – Margem: 8-16px</li>
+  </ul>
+  <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:24px;background:#f6f2ed;padding:12px;border-radius:10px;margin-bottom:8px;">
+    <div style="background:#B6A192;grid-column:span 3;border-radius:8px;height:24px;"></div>
+    <div style="background:#927B69;grid-column:span 6;border-radius:8px;height:24px;"></div>
+    <div style="background:#c8af90;grid-column:span 3;border-radius:8px;height:24px;"></div>
+  </div>
+  <p style="font-size:13px;color:#666;margin-top:4px;">
+    <b>Exemplo de grid 12 colunas (desktop):</b> Adapte para 8/4 colunas em tablet/mobile.
+  </p>
+
+  <h3 style="margin-top:26px;">Escala de Ícones para E-commerce</h3>
+  <table style="width:100%;max-width:420px;border-collapse:collapse;font-size:16px;">
+    <thead><tr style="background:#f6f2ed;">
+      <th>Tamanho</th><th>Pixels</th><th>REM</th><th>Uso</th></tr></thead>
+    <tbody>
+      <tr><td>xs</td><td>16px</td><td>1rem</td><td>Ícones em botões pequenos, inputs</td></tr>
+      <tr><td>sm</td><td>20px</td><td>1.25rem</td><td>Menu, listas</td></tr>
+      <tr><td>md</td><td>24px</td><td>1.5rem</td><td>Barra superior, cartões</td></tr>
+      <tr><td>lg</td><td>32px</td><td>2rem</td><td>Cards de vitrine/destaque</td></tr>
+      <tr><td>xl</td><td>48px</td><td>3rem</td><td>Banners, ilustrativos</td></tr>
+    </tbody>
+  </table>
+  <ul>
+    <li>Ícones sempre com <b>stroke fino (2px)</b> e linhas retas, estilo minimalista/flaticon.</li>
+    <li>Cores principais: <span style="color:#927B69;"><b>#927B69</b> (dark)</span> ou variações claras para fundos escuros.</li>
+  </ul>
+
+  <h3 style="margin-top:25px;">Ícones recomendados e exemplos SVG (cor da marca)</h3>
+  <div style="display:flex;gap:24px;flex-wrap:wrap;">
+    <div style="text-align:center;">
+      <!-- Carrinho -->
+      <svg width="32" height="32" stroke-width="2" stroke="#927B69" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="27" r="2"/><circle cx="24" cy="27" r="2"/>
+        <path d="M5 5h2l3 16h14l3-10H8"/>
+      </svg><br>
+      <span style="font-size:13px">Carrinho</span>
+    </div>
+    <div style="text-align:center;">
+      <!-- Usuário -->
+      <svg width="32" height="32" stroke-width="2" stroke="#927B69" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="16" cy="12" r="6"/>
+        <path d="M5 29c0-5 6-7 11-7s11 2 11 7"/>
+      </svg><br>
+      <span style="font-size:13px">Usuário</span>
+    </div>
+    <div style="text-align:center;">
+      <!-- Coração -->
+      <svg width="32" height="32" stroke-width="2" stroke="#927B69" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 28s-11-6.74-11-16.05c0-4.42 3.36-8.03 7.5-8.03A8 8 0 0 1 16 7.66a8 8 0 0 1 11.5 4.29c4.14 0 7.5 3.61 7.5 8.03C27 21.26 16 28 16 28z"/>
+      </svg><br>
+      <span style="font-size:13px">Favorito</span>
+    </div>
+    <div style="text-align:center;">
+      <!-- Lupa -->
+      <svg width="32" height="32" stroke-width="2" stroke="#927B69" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="15" cy="15" r="10"/>
+        <line x1="23" y1="23" x2="29" y2="29"/>
+      </svg><br>
+      <span style="font-size:13px">Buscar</span>
+    </div>
+    <div style="text-align:center;">
+      <!-- Saco/bolsa -->
+      <svg width="32" height="32" stroke-width="2" stroke="#927B69" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="6" y="10" width="20" height="16" rx="3"/>
+        <path d="M10 10V8a6 6 0 0 1 12 0v2"/>
+      </svg><br>
+      <span style="font-size:13px">Sacola</span>
+    </div>
+    <div style="text-align:center;">
+      <!-- Pedido/nota -->
+      <svg width="32" height="32" stroke-width="2" stroke="#927B69" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="7" y="7" width="18" height="24" rx="2"/>
+        <line x1="11" y1="13" x2="21" y2="13"/>
+        <line x1="11" y1="19" x2="21" y2="19"/>
+        <line x1="11" y1="25" x2="17" y2="25"/>
+      </svg><br>
+      <span style="font-size:13px">Pedidos</span>
+    </div>
+    <div style="text-align:center;">
+      <!-- Selo/Cupom -->
+      <svg width="32" height="32" stroke-width="2" stroke="#927B69" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="8" y="13" width="16" height="9" rx="2"/>
+        <circle cx="16" cy="17.5" r="1.5"/>
+      </svg><br>
+      <span style="font-size:13px">Cupom/Selo</span>
+    </div>
+    <div style="text-align:center;">
+      <!-- Caminhão -->
+      <svg width="32" height="32" stroke-width="2" stroke="#927B69" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="16" width="15" height="9" rx="2"/>
+        <rect x="17" y="19" width="11" height="6" rx="1.5"/>
+        <circle cx="7" cy="27" r="2"/>
+        <circle cx="25" cy="27" r="2"/>
+      </svg><br>
+      <span style="font-size:13px">Entrega</span>
+    </div>
+  </div>
+  <ul style="margin-top:10px; font-size: 15px;">
+    <li>Outros ícones recomendados: <b>Home, Menu, Categoria, Chat/suporte, Logout, Seta</b>.</li>
+    <li>Todos devem ser com borda fina (stroke 2px), linhas retas/minimalistas, <b>origem Flaticon</b> ou similar.</li>
+    <li>Use <span style="color:#927B69"><b>#927B69</b></span> como cor padrão dos ícones. Em fundos escuros, use <b>#B6A192</b>.</li>
+  </ul>
+</section>
 </body>
 </html>
 
