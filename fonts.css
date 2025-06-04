@@ -1,0 +1,102 @@
+/* Contralto Fonts */
+@font-face {
+    font-family: 'Contralto Big';
+    src: url('FONTS/Contralto Big Black.otf') format('opentype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Contralto Big';
+    src: url('FONTS/Contralto Big Black Italic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Contralto Big';
+    src: url('FONTS/Contralto Big Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Contralto Big';
+    src: url('FONTS/Contralto Big Bold Italic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Contralto Big';
+    src: url('FONTS/Contralto Big Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Contralto Big';
+    src: url('FONTS/Contralto Big Regular Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Gotham Fonts */
+@font-face {
+    font-family: 'Gotham';
+    src: url('FONTS/Gotham-Black.otf') format('opentype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('FONTS/Gotham-BlackItalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('FONTS/Gotham-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('FONTS/Gotham-BoldItalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Gotham Small Screen Fonts */
+@font-face {
+    font-family: 'Gotham SSm';
+    src: url('FONTS/GothamSSm-Black.otf') format('opentype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Gotham SSm';
+    src: url('FONTS/GothamSSm-BlackItalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gotham SSm';
+    src: url('FONTS/GothamSSm-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+/* Adicione mais variações conforme necessário */
+
+body {
+    font-family: 'Gotham', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.font-sample {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
