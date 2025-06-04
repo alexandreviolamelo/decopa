@@ -1,102 +1,82 @@
 /* Contralto Fonts */
+/* Big Variants */
+@font-face {
+    font-family: 'Contralto Big';
+    src: url('FONTS/Contralto Big Regular.otf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Contralto Big';
+    src: url('FONTS/Contralto Big Bold.otf') format('opentype');
+    font-weight: bold;
+}
 @font-face {
     font-family: 'Contralto Big';
     src: url('FONTS/Contralto Big Black.otf') format('opentype');
     font-weight: 900;
 }
 
-@font-face {
-    font-family: 'Contralto Big';
-    src: url('FONTS/Contralto Big Black Italic.otf') format('opentype');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Contralto Big';
-    src: url('FONTS/Contralto Big Bold.otf') format('opentype');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Contralto Big';
-    src: url('FONTS/Contralto Big Bold Italic.otf') format('opentype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Contralto Big';
-    src: url('FONTS/Contralto Big Regular.otf') format('opentype');
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Contralto Big';
-    src: url('FONTS/Contralto Big Regular Italic.otf') format('opentype');
-    font-weight: normal;
-    font-style: italic;
-}
-
 /* Gotham Fonts */
+@font-face {
+    font-family: 'Gotham';
+    src: url('FONTS/Gotham-Book.otf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('FONTS/Gotham-Bold.otf') format('opentype');
+    font-weight: bold;
+}
 @font-face {
     font-family: 'Gotham';
     src: url('FONTS/Gotham-Black.otf') format('opentype');
     font-weight: 900;
 }
 
+/* Gotham Condensed */
 @font-face {
-    font-family: 'Gotham';
-    src: url('FONTS/Gotham-BlackItalic.otf') format('opentype');
-    font-weight: 900;
-    font-style: italic;
+    font-family: 'Gotham Condensed';
+    src: url('FONTS/GothamCond-Book.otf') format('opentype');
+    font-weight: normal;
 }
-
 @font-face {
-    font-family: 'Gotham';
-    src: url('FONTS/Gotham-Bold.otf') format('opentype');
+    font-family: 'Gotham Condensed';
+    src: url('FONTS/GothamCond-Bold.otf') format('opentype');
     font-weight: bold;
 }
 
-@font-face {
-    font-family: 'Gotham';
-    src: url('FONTS/Gotham-BoldItalic.otf') format('opentype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-/* Gotham Small Screen Fonts */
+/* Gotham SSm (Small Screen) */
 @font-face {
     font-family: 'Gotham SSm';
-    src: url('FONTS/GothamSSm-Black.otf') format('opentype');
-    font-weight: 900;
+    src: url('FONTS/GothamSSm-Book.otf') format('opentype');
+    font-weight: normal;
 }
-
-@font-face {
-    font-family: 'Gotham SSm';
-    src: url('FONTS/GothamSSm-BlackItalic.otf') format('opentype');
-    font-weight: 900;
-    font-style: italic;
-}
-
 @font-face {
     font-family: 'Gotham SSm';
     src: url('FONTS/GothamSSm-Bold.otf') format('opentype');
     font-weight: bold;
 }
 
-/* Adicione mais variações conforme necessário */
-
-body {
-    font-family: 'Gotham', sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+/* Gotham Rounded */
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('FONTS/GothamRnd-Book.otf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('FONTS/GothamRnd-Bold.otf') format('opentype');
+    font-weight: bold;
 }
 
-.font-sample {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
+/* Gotham Narrow */
+@font-face {
+    font-family: 'Gotham Narrow';
+    src: url('FONTS/GothamXNarrow-Book.otf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Gotham Narrow';
+    src: url('FONTS/GothamXNarrow-Bold.otf') format('opentype');
+    font-weight: bold;
 }
