@@ -1,380 +1,313 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<title>Showcase Completo de Fontes - Decopa</title>
-<style>
-body {
-  font-family: Arial, sans-serif;
-  background: #f0f0f0;
-  margin: 0;
-  padding: 20px;
-  line-height: 1.5;
-}
-h1 {
-  text-align: center;
-  margin-bottom: 1em;
-}
-section {
-  background: #fff;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-h2 {
-  margin-top: 0;
-}
-.font-test {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-</style>
-<!-- Link para as fontes -->
-<link rel="stylesheet" href="fonts.css" />
+    <meta charset="UTF-8">
+    <title>Decopa Fontes & Paleta</title>
+    <link rel="stylesheet" href="fonts.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+            background: #f4f4f4;
+        }
+        h1 { text-align: center; color: #36322f; border-bottom: 2px solid #927B69; padding-bottom: 10px; }
+        h2 { color: #886e53; margin: 38px 0 14px 0;}
+        .font-section {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 9px;
+            box-shadow: 0 4px 10px rgba(146,123,105,0.06);
+        }
+        .font-sample {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #ede6df;
+        }
+        .font-sample:last-child { border-bottom: none; }
+        .font-sample p { margin: 0; font-size: 20px; }
+        /* Paleta */
+        .color-palette-section {
+            background: #fff;
+            margin-top: 30px;
+            padding: 22px 12px;
+            border-radius: 10px;
+            box-shadow:0 4px 10px rgba(146,123,105,0.08);
+        }
+        .main-colors {
+            margin-bottom: 18px;
+        }
+        .main-colors span {
+            display:inline-block;
+            border-radius:5px;
+            font-weight:bold;
+            padding:3px 15px;
+            margin-right:16px;
+        }
+        .main-dark {background:#927B69; color:#fff;}
+        .main-light {background:#B6A192; color:#222;}
+        table.palette { border-collapse:separate; border-spacing:6px 8px; width:100%;}
+        table.palette th, table.palette td { text-align:center; font-size:13px; border-radius:4px;}
+        table.palette th { font-weight:bold; background:#EFE9E3; }
+        table.palette td.shade-name { text-align:right; font-size:13px; font-family:monospace; background:transparent;}
+    </style>
 </head>
 <body>
+    <h1>Showcase de Fontes e Paleta de Cores Decopa</h1>
 
-<h1>Showcase Completo de Fontes - Decopa</h1>
+    <!-- GOTHAM -->
+    <div class="font-section">
+        <h2>Gotham</h2>
+        <div class="font-sample"><strong>Book</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Book Italic</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: normal; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Bold</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: bold;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Bold Italic</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: bold; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Light</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: 300;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Light Italic</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: 300; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Black</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: 900;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Black Italic</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: 900; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Medium</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: 500;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Medium Italic</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: 500; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Thin</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: 100;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Thin Italic</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: 100; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Ultra</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: 800;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Ultra Italic</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: 800; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>XLight</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: 200;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>XLight Italic</strong>:<br>
+            <p style="font-family: 'Gotham'; font-weight: 200; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+    </div>
 
-<!-- Contralto Big -->
-<section>
-<h2>Contralto Big</h2>
-<div class="font-test">
-  <strong>Regular</strong>:<br>
-  <p style="font-family: 'Contralto Big'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<div class="font-test">
-  <strong>Bold</strong>:<br>
-  <p style="font-family: 'Contralto Big'; font-weight: bold;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<div class="font-test">
-  <strong>Black</strong>:<br>
-  <p style="font-family: 'Contralto Big'; font-weight: 900;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<div class="font-test">
-  <strong>Italic</strong>:<br>
-  <p style="font-family: 'Contralto Big'; font-weight: normal; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<div class="font-test">
-  <strong>Black Italic</strong>:<br>
-  <p style="font-family: 'Contralto Big'; font-weight: 900; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<!-- Adicione aqui todas as variações de Contralto Big, Medium, Small, XSmall, de acordo com seu conteúdo -->
-</section>
+    <!-- GOTHAM ROUNDED -->
+    <div class="font-section">
+        <h2>Gotham Rounded</h2>
+        <div class="font-sample"><strong>Bold</strong>:<br>
+            <p style="font-family: 'Gotham Rounded'; font-weight: bold;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Bold Italic</strong>:<br>
+            <p style="font-family: 'Gotham Rounded'; font-weight: bold; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Book</strong>:<br>
+            <p style="font-family: 'Gotham Rounded'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Book Italic</strong>:<br>
+            <p style="font-family: 'Gotham Rounded'; font-weight: normal; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Light</strong>:<br>
+            <p style="font-family: 'Gotham Rounded'; font-weight: 300;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Light Italic</strong>:<br>
+            <p style="font-family: 'Gotham Rounded'; font-weight: 300; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Medium</strong>:<br>
+            <p style="font-family: 'Gotham Rounded'; font-weight: 500;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Medium Italic</strong>:<br>
+            <p style="font-family: 'Gotham Rounded'; font-weight: 500; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+    </div>
 
-<!-- Gotham Rounded -->
-<section>
-<h2>Gotham Rounded</h2>
-<div class="font-test">
-  <strong>Regular</strong>:<br>
-  <p style="font-family: 'Gotham Rounded'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<div class="font-test">
-  <strong>Bold</strong>:<br>
-  <p style="font-family: 'Gotham Rounded'; font-weight: bold;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<!-- Adicione variações adicionais de Gotham Rounded -->
-</section>
+    <!-- GOTHAM ROUNDED SCREENSMART -->
+    <div class="font-section">
+        <h2>Gotham Rounded ScreenSmart</h2>
+        <div class="font-sample">
+            <strong>Bold</strong>:<br>
+            <p style="font-family: 'Gotham Rounded ScreenSmart'; font-weight: bold;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample">
+            <strong>Bold Italic</strong>:<br>
+            <p style="font-family: 'Gotham Rounded ScreenSmart'; font-weight: bold; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample">
+            <strong>Book</strong>:<br>
+            <p style="font-family: 'Gotham Rounded ScreenSmart'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample">
+            <strong>Book Italic</strong>:<br>
+            <p style="font-family: 'Gotham Rounded ScreenSmart'; font-weight: normal; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample">
+            <strong>Light</strong>:<br>
+            <p style="font-family: 'Gotham Rounded ScreenSmart'; font-weight: 300;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample">
+            <strong>Light Italic</strong>:<br>
+            <p style="font-family: 'Gotham Rounded ScreenSmart'; font-weight: 300; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample">
+            <strong>Medium</strong>:<br>
+            <p style="font-family: 'Gotham Rounded ScreenSmart'; font-weight: 500;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample">
+            <strong>Medium Italic</strong>:<br>
+            <p style="font-family: 'Gotham Rounded ScreenSmart'; font-weight: 500; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+    </div>
 
-<!-- Gotham Condensed -->
-<section>
-<h2>Gotham Condensed</h2>
-<div class="font-test">
-  <strong>Regular</strong>:<br>
-  <p style="font-family: 'Gotham Condensed'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<div class="font-test">
-  <strong>Bold</strong>:<br>
-  <p style="font-family: 'Gotham Condensed'; font-weight: bold;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<!-- Outras variações -->
-</section>
+    <!-- GOTHAM SCREENSMART -->
+    <div class="font-section">
+        <h2>Gotham ScreenSmart</h2>
+        <div class="font-sample"><strong>Black</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart'; font-weight: 900;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Black Italic</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart'; font-weight: 900; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Bold</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart'; font-weight: bold;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Bold Italic</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart'; font-weight: bold; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Book</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Book Italic</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart'; font-weight: normal; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Light</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart'; font-weight: 300;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Light Italic</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart'; font-weight: 300; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Medium</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart'; font-weight: 500;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Medium Italic</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart'; font-weight: 500; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>XLight</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart'; font-weight: 200;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>XLight Italic</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart'; font-weight: 200; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+    </div>
 
-<!-- Gotham XSmall -->
-<section>
-<h2>Gotham XSmall</h2>
-<div class="font-test">
-  <strong>Regular</strong>:<br>
-  <p style="font-family: 'Gotham XSmall'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<div class="font-test">
-  <strong>Bold</strong>:<br>
-  <p style="font-family: 'Gotham XSmall'; font-weight: bold;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<!-- Outras variações -->
-</section>
+    <!-- GOTHAM SCREENSMART EXTRA NARROW (Exemplo para family) -->
+    <div class="font-section">
+        <h2>Gotham ScreenSmart Extra Narrow</h2>
+        <div class="font-sample"><strong>Black</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart Extra Narrow'; font-weight: 900;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Black Italic</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart Extra Narrow'; font-weight: 900; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Bold</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart Extra Narrow'; font-weight: bold;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Bold Italic</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart Extra Narrow'; font-weight: bold; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Book</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart Extra Narrow'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Book Italic</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart Extra Narrow'; font-weight: normal; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Light</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart Extra Narrow'; font-weight: 300;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Light Italic</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart Extra Narrow'; font-weight: 300; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Medium</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart Extra Narrow'; font-weight: 500;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>Medium Italic</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart Extra Narrow'; font-weight: 500; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>XLight</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart Extra Narrow'; font-weight: 200;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+        <div class="font-sample"><strong>XLight Italic</strong>:<br>
+            <p style="font-family: 'Gotham ScreenSmart Extra Narrow'; font-weight: 200; font-style: italic;">The quick brown fox jumps over the lazy dog. 0123456789</p></div>
+    </div>
 
-<!-- Gotham Extra Narrow -->
-<section>
-<h2>Gotham Extra Narrow</h2>
-<div class="font-test">
-  <strong>Regular</strong>:<br>
-  <p style="font-family: 'Gotham Extra Narrow'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<div class="font-test">
-  <strong>Bold</strong>:<br>
-  <p style="font-family: 'Gotham Extra Narrow'; font-weight: bold;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-</section>
+    <!-- Você pode seguir o mesmo padrão para as demais famílias que desejar -->
 
-<!-- Gotham ScreenSmart -->
-<section>
-<h2>Gotham ScreenSmart</h2>
-<div class="font-test">
-  <strong>Regular</strong>:<br>
-  <p style="font-family: 'Gotham ScreenSmart'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<!-- Mais variações de Gotham ScreenSmart -->
-</section>
-
-<!-- Gotham Office Narrow -->
-<section>
-<h2>Gotham Office Narrow</h2>
-<div class="font-test">
-  <strong>Regular</strong>:<br>
-  <p style="font-family: 'Gotham Office Narrow'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<!-- Outras variações -->
-</section>
-
-<!-- Gotham Rounded ScreenSmart -->
-<section>
-<h2>Gotham Rounded ScreenSmart</h2>
-<div class="font-test">
-  <strong>Regular</strong>:<br>
-  <p style="font-family: 'Gotham Rounded ScreenSmart'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<!-- Outras variações -->
-</section>
-
-<!-- Gotham -->
-<section>
-<h2>Gotham</h2>
-<div class="font-test">
-  <strong>Regular</strong>:<br>
-  <p style="font-family: 'Gotham'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<div class="font-test">
-  <strong>Black</strong>:<br>
-  <p style="font-family: 'Gotham'; font-weight: 900;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-<!-- Outras variações -->
-</section>
-
-<!-- Gotham Rounded -->
-<section>
-<h2>Gotham Rounded</h2>
-<div class="font-test">
-  <strong>Regular</strong>:<br>
-  <p style="font-family: 'Gotham Rounded'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-</section>
-
-<!-- Gotham Condensed -->
-<section>
-<h2>Gotham Condensed</h2>
-<div class="font-test">
-  <strong>Regular</strong>:<br>
-  <p style="font-family: 'Gotham Condensed'; font-weight: normal;">The quick brown fox jumps over the lazy dog. 0123456789</p>
-</div>
-</section>
-<section style="background:#fff; border-radius:8px; margin-top:40px; padding:20px; box-shadow:0 4px 6px rgba(0,0,0,0.08)">
-  <h2>Paleta de Cores Oficial</h2>
-  <p>
-    <strong>Principal versão Dark:</strong>
-    <span style="display:inline-block; background:#927B69; color:#fff; padding:2px 14px; border-radius:4px; font-weight:bold; margin-right:8px;">
-      #927B69
-    </span>
-    <strong>Principal versão Light:</strong>
-    <span style="display:inline-block; background:#B6A192; color:#222; padding:2px 14px; border-radius:4px; font-weight:bold;">
-      #B6A192
-    </span>
-  </p>
-
-  <div style="overflow-x:auto;">
-    <table style="border-collapse:separate; border-spacing:6px 8px; margin-top:18px">
-      <tbody>
-        <!-- Cada linha da paleta -->
-        <tr>
-          <td></td>
-          <td style="font-size:13px">50</td><td style="font-size:13px">100</td><td style="font-size:13px">200</td><td style="font-size:13px">300</td><td style="font-size:13px">400</td>
-          <td style="font-size:13px">500</td><td style="font-size:13px">600</td><td style="font-size:13px">700</td><td style="font-size:13px">800</td><td style="font-size:13px">900</td>
-          <td style="font-size:13px">950</td>
-        </tr>
-        <!-- camel seaweed -->
-        <tr>
-          <td style="font-size:13px; font-family:monospace">camel seaweed</td>
-          <td style="background:#F6F2ED;width:50px;height:35px"></td>
-          <td style="background:#F0E3D6"></td>
-          <td style="background:#DECBB5"></td>
-          <td style="background:#C8AF90"></td>
-          <td style="background:#B49770"></td>
-          <td style="background:#A4834E"></td>
-          <td style="background:#92734A"></td>
-          <td style="background:#7B5C37"></td>
-          <td style="background:#5E4024"></td>
-          <td style="background:#382312"></td>
-          <td style="background:#1E1208"></td>
-        </tr>
-        <!-- chamomile seaweed -->
-        <tr>
-          <td style="font-size:13px; font-family:monospace">chamomile seaweed</td>
-          <td style="background:#F4EDE6"></td>
-          <td style="background:#E0D5C1"></td>
-          <td style="background:#C9B393"></td>
-          <td style="background:#B79A70"></td>
-          <td style="background:#A8834D"></td>
-          <td style="background:#94713F"></td>
-          <td style="background:#805D34"></td>
-          <td style="background:#674625"></td>
-          <td style="background:#463015"></td>
-          <td style="background:#221608"></td>
-        </tr>
-        <!-- tropical seaweed -->
-        <tr>
-          <td style="font-size:13px; font-family:monospace">tropical seaweed</td>
-          <td style="background:#F4EDDC"></td>
-          <td style="background:#ECE0BC"></td>
-          <td style="background:#DAC48B"></td>
-          <td style="background:#B79C63"></td>
-          <td style="background:#A7894C"></td>
-          <td style="background:#8A713B"></td>
-          <td style="background:#766132"></td>
-          <td style="background:#55471A"></td>
-          <td style="background:#2F260B"></td>
-          <td style="background:#181304"></td>
-        </tr>
-        <!-- marsh seaweed -->
-        <tr>
-          <td style="font-size:13px; font-family:monospace">marsh seaweed</td>
-          <td style="background:#F0EADC"></td>
-          <td style="background:#E9DCBC"></td>
-          <td style="background:#DBCA8E"></td>
-          <td style="background:#BFB165"></td>
-          <td style="background:#A29546"></td>
-          <td style="background:#8F8135"></td>
-          <td style="background:#6F6327"></td>
-          <td style="background:#544B1A"></td>
-          <td style="background:#38320C"></td>
-          <td style="background:#181706"></td>
-        </tr>
-        <!-- sand tan -->
-        <tr>
-          <td style="font-size:13px; font-family:monospace">sand tan</td>
-          <td style="background:#F7EFE6"></td>
-          <td style="background:#EEE1CE"></td>
-          <td style="background:#E1CBA9"></td>
-          <td style="background:#D8B98B"></td>
-          <td style="background:#BB9258"></td>
-          <td style="background:#937142"></td>
-          <td style="background:#806033"></td>
-          <td style="background:#6F5226"></td>
-          <td style="background:#4E3B13"></td>
-          <td style="background:#241B0A"></td>
-        </tr>
-        <!-- gold leather -->
-        <tr>
-          <td style="font-size:13px; font-family:monospace">gold leather</td>
-          <td style="background:#F8EFEA"></td>
-          <td style="background:#F0DCCD"></td>
-          <td style="background:#E1B998"></td>
-          <td style="background:#CBA778"></td>
-          <td style="background:#B68B54"></td>
-          <td style="background:#97704D"></td>
-          <td style="background:#7E5D3F"></td>
-          <td style="background:#67482E"></td>
-          <td style="background:#46301C"></td>
-          <td style="background:#1C1408"></td>
-        </tr>
-        <!-- leather -->
-        <tr>
-          <td style="font-size:13px; font-family:monospace">leather</td>
-          <td style="background:#EFE4DD"></td>
-          <td style="background:#E8D7CE"></td>
-          <td style="background:#DFBCA4"></td>
-          <td style="background:#C69D77"></td>
-          <td style="background:#AB7E53"></td>
-          <td style="background:#916A3E"></td>
-          <td style="background:#7A5630"></td>
-          <td style="background:#5C3F20"></td>
-          <td style="background:#332310"></td>
-          <td style="background:#1B1108"></td>
-        </tr>
-        <!-- chestnut -->
-        <tr>
-          <td style="font-size:13px; font-family:monospace">chestnut</td>
-          <td style="background:#EFE2DD"></td>
-          <td style="background:#E4CEC9"></td>
-          <td style="background:#D5B4AA"></td>
-          <td style="background:#B18C81"></td>
-          <td style="background:#976347"></td>
-          <td style="background:#7B4C2D"></td>
-          <td style="background:#683820"></td>
-          <td style="background:#4A2717"></td>
-          <td style="background:#24130B"></td>
-          <td style="background:#120906"></td>
-        </tr>
-        <!-- sunset -->
-        <tr>
-          <td style="font-size:13px; font-family:monospace">sunset</td>
-          <td style="background:#F3E3E0"></td>
-          <td style="background:#E2C7C1"></td>
-          <td style="background:#D3B2A6"></td>
-          <td style="background:#B6938A"></td>
-          <td style="background:#936962"></td>
-          <td style="background:#814E4B"></td>
-          <td style="background:#6A3937"></td>
-          <td style="background:#4B2726"></td>
-          <td style="background:#221111"></td>
-          <td style="background:#11090A"></td>
-        </tr>
-        <!-- moss green -->
-        <tr>
-          <td style="font-size:13px; font-family:monospace">moss green</td>
-          <td style="background:#EFF3DE"></td>
-          <td style="background:#E8EBC2"></td>
-          <td style="background:#D8DA9A"></td>
-          <td style="background:#BEC762"></td>
-          <td style="background:#9CAD3C"></td>
-          <td style="background:#7C9233"></td>
-          <td style="background:#567037"></td>
-          <td style="background:#415624"></td>
-          <td style="background:#283511"></td>
-          <td style="background:#171C08"></td>
-        </tr>
-        <!-- leather green -->
-        <tr>
-          <td style="font-size:13px; font-family:monospace">leather green</td>
-          <td style="background:#F1EEE1"></td>
-          <td style="background:#E5E2CC"></td>
-          <td style="background:#CECDA7"></td>
-          <td style="background:#B4B280"></td>
-          <td style="background:#8B964B"></td>
-          <td style="background:#6D733D"></td>
-          <td style="background:#54572B"></td>
-          <td style="background:#393C1A"></td>
-          <td style="background:#21210B"></td>
-          <td style="background:#0F1006"></td>
-        </tr>
-        <!-- green leather -->
-        <tr>
-          <td style="font-size:13px; font-family:monospace">green leather</td>
-          <td style="background:#EEE6E2"></td>
-          <td style="background:#E1D8D2"></td>
-          <td style="background:#D7C5B8"></td>
-          <td style="background:#BBA89D"></td>
-          <td style="background:#957E71"></td>
-          <td style="background:#756053"></td>
-          <td style="background:#594934"></td>
-          <td style="background:#3B2F1E"></td>
-          <td style="background:#1F1710"></td>
-          <td style="background:#0B0805"></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
+    <!-- PALETA DE CORES -->
+    <section class="color-palette-section">
+      <h2>Paleta de Cores Oficial</h2>
+      <div class="main-colors">
+        <strong>Principal versão Dark:</strong>
+        <span class="main-dark">#927B69</span>
+        <strong>Principal versão Light:</strong>
+        <span class="main-light">#B6A192</span>
+      </div>
+      <!-- Paleta completa -->
+      <div style="overflow-x:auto;">
+        <table class="palette">
+          <tr>
+            <th></th>
+            <th>50</th><th>100</th><th>200</th><th>300</th><th>400</th>
+            <th>500</th><th>600</th><th>700</th><th>800</th><th>900</th><th>950</th>
+          </tr>
+          <tr>
+            <td class="shade-name">camel seaweed</td>
+            <td style="background:#F6F2ED"></td><td style="background:#F0E3D6"></td><td style="background:#DECBB5"></td>
+            <td style="background:#C8AF90"></td><td style="background:#B49770"></td><td style="background:#A4834E"></td>
+            <td style="background:#92734A"></td><td style="background:#7B5C37"></td>
+            <td style="background:#5E4024"></td><td style="background:#382312"></td><td style="background:#1E1208"></td>
+          </tr>
+          <tr>
+            <td class="shade-name">chamomile seaweed</td>
+            <td style="background:#F4EDE6"></td><td style="background:#E0D5C1"></td><td style="background:#C9B393"></td>
+            <td style="background:#B79A70"></td><td style="background:#A8834D"></td><td style="background:#94713F"></td>
+            <td style="background:#805D34"></td><td style="background:#674625"></td>
+            <td style="background:#463015"></td><td style="background:#221608"></td>
+          </tr>
+          <tr>
+            <td class="shade-name">tropical seaweed</td>
+            <td style="background:#F4EDDC"></td><td style="background:#ECE0BC"></td><td style="background:#DAC48B"></td>
+            <td style="background:#B79C63"></td><td style="background:#A7894C"></td><td style="background:#8A713B"></td>
+            <td style="background:#766132"></td><td style="background:#55471A"></td>
+            <td style="background:#2F260B"></td><td style="background:#181304"></td>
+          </tr>
+          <tr>
+            <td class="shade-name">marsh seaweed</td>
+            <td style="background:#F0EADC"></td><td style="background:#E9DCBC"></td><td style="background:#DBCA8E"></td>
+            <td style="background:#BFB165"></td><td style="background:#A29546"></td><td style="background:#8F8135"></td>
+            <td style="background:#6F6327"></td><td style="background:#544B1A"></td>
+            <td style="background:#38320C"></td><td style="background:#181706"></td>
+          </tr>
+          <tr>
+            <td class="shade-name">sand tan</td>
+            <td style="background:#F7EFE6"></td><td style="background:#EEE1CE"></td><td style="background:#E1CBA9"></td>
+            <td style="background:#D8B98B"></td><td style="background:#BB9258"></td><td style="background:#937142"></td>
+            <td style="background:#806033"></td><td style="background:#6F5226"></td>
+            <td style="background:#4E3B13"></td><td style="background:#241B0A"></td>
+          </tr>
+          <tr>
+            <td class="shade-name">gold leather</td>
+            <td style="background:#F8EFEA"></td><td style="background:#F0DCCD"></td><td style="background:#E1B998"></td>
+            <td style="background:#CBA778"></td><td style="background:#B68B54"></td><td style="background:#97704D"></td>
+            <td style="background:#7E5D3F"></td><td style="background:#67482E"></td>
+            <td style="background:#46301C"></td><td style="background:#1C1408"></td>
+          </tr>
+          <tr>
+            <td class="shade-name">leather</td>
+            <td style="background:#EFE4DD"></td><td style="background:#E8D7CE"></td><td style="background:#DFBCA4"></td>
+            <td style="background:#C69D77"></td><td style="background:#AB7E53"></td><td style="background:#916A3E"></td>
+            <td style="background:#7A5630"></td><td style="background:#5C3F20"></td>
+            <td style="background:#332310"></td><td style="background:#1B1108"></td>
+          </tr>
+          <tr>
+            <td class="shade-name">chestnut</td>
+            <td style="background:#EFE2DD"></td><td style="background:#E4CEC9"></td><td style="background:#D5B4AA"></td>
+            <td style="background:#B18C81"></td><td style="background:#976347"></td><td style="background:#7B4C2D"></td>
+            <td style="background:#683820"></td><td style="background:#4A2717"></td>
+            <td style="background:#24130B"></td><td style="background:#120906"></td>
+          </tr>
+          <tr>
+            <td class="shade-name">sunset</td>
+            <td style="background:#F3E3E0"></td><td style="background:#E2C7C1"></td><td style="background:#D3B2A6"></td>
+            <td style="background:#B6938A"></td><td style="background:#936962"></td><td style="background:#814E4B"></td>
+            <td style="background:#6A3937"></td><td style="background:#4B2726"></td>
+            <td style="background:#221111"></td><td style="background:#11090A"></td>
+          </tr>
+          <tr>
+            <td class="shade-name">moss green</td>
+            <td style="background:#EFF3DE"></td><td style="background:#E8EBC2"></td><td style="background:#D8DA9A"></td>
+            <td style="background:#BEC762"></td><td style="background:#9CAD3C"></td><td style="background:#7C9233"></td>
+            <td style="background:#567037"></td><td style="background:#415624"></td>
+            <td style="background:#283511"></td><td style="background:#171C08"></td>
+          </tr>
+          <tr>
+            <td class="shade-name">leather green</td>
+            <td style="background:#F1EEE1"></td><td style="background:#E5E2CC"></td><td style="background:#CECDA7"></td>
+            <td style="background:#B4B280"></td><td style="background:#8B964B"></td><td style="background:#6D733D"></td>
+            <td style="background:#54572B"></td><td style="background:#393C1A"></td>
+            <td style="background:#21210B"></td><td style="background:#0F1006"></td>
+          </tr>
+          <tr>
+            <td class="shade-name">green leather</td>
+            <td style="background:#EEE6E2"></td><td style="background:#E1D8D2"></td><td style="background:#D7C5B8"></td>
+            <td style="background:#BBA89D"></td><td style="background:#957E71"></td><td style="background:#756053"></td>
+            <td style="background:#594934"></td><td style="background:#3B2F1E"></td>
+            <td style="background:#1F1710"></td><td style="background:#0B0805"></td>
+          </tr>
+        </table>
+      </div>
+      <p style="font-size:0.96em;color:#666;margin-top:10px;">Acima: tabela completa da paleta institucional de cor utilizada no projeto.</p>
+    </section>
 </body>
 </html>
