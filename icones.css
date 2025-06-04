@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'flaticon-uicons-thin-straight';
+  src: url('../icones/flaticon-uicons-thin-straight.woff2') format('woff2'),
+       url('../icones/flaticon-uicons-thin-straight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: 'flaticon-uicons-thin-straight' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 24px;        /* padrão, personalize para xs/sm/md/lg/xl */
+  display: inline-block;
+  line-height: 1;
+  color: #927B69;         /* cor da marca */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
