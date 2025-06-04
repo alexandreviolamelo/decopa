@@ -2,59 +2,87 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Demonstração de Fontes</title>
+    <title>Decopa Font Showcase</title>
     <link rel="stylesheet" href="fonts.css">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        .font-section {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
         .font-sample {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             padding: 10px;
-            border: 1px solid #ddd;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #666;
+            margin-top: 20px;
+        }
+        .font-sample p {
+            margin: 0;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <h1>Demonstração de Fontes</h1>
+    <h1>Decopa Font Showcase</h1>
 
-    <div class="font-sample">
-        <h2>Contralto Big - Regular</h2>
-        <p style="font-family: 'Contralto Big'; font-weight: normal;">
-            The quick brown fox jumps over the lazy dog. 0123456789
-        </p>
+    <!-- Contralto Fonts -->
+    <div class="font-section">
+        <h2>Contralto Fonts</h2>
+        
+        <div class="font-sample">
+            <h3>Contralto Big - Regular</h3>
+            <p style="font-family: 'Contralto Big'; font-weight: normal;">
+                The quick brown fox jumps over the lazy dog. 0123456789
+            </p>
+        </div>
+
+        <div class="font-sample">
+            <h3>Contralto Big - Bold</h3>
+            <p style="font-family: 'Contralto Big'; font-weight: bold;">
+                The quick brown fox jumps over the lazy dog. 0123456789
+            </p>
+        </div>
     </div>
 
-    <div class="font-sample">
-        <h2>Contralto Big - Bold</h2>
-        <p style="font-family: 'Contralto Big'; font-weight: bold;">
-            The quick brown fox jumps over the lazy dog. 0123456789
-        </p>
+    <!-- Gotham Fonts -->
+    <div class="font-section">
+        <h2>Gotham Fonts</h2>
+        
+        <div class="font-sample">
+            <h3>Gotham - Regular</h3>
+            <p style="font-family: 'Gotham'; font-weight: normal;">
+                The quick brown fox jumps over the lazy dog. 0123456789
+            </p>
+        </div>
+
+        <div class="font-sample">
+            <h3>Gotham - Bold</h3>
+            <p style="font-family: 'Gotham'; font-weight: bold;">
+                The quick brown fox jumps over the lazy dog. 0123456789
+            </p>
+        </div>
     </div>
 
-    <div class="font-sample">
-        <h2>Gotham - Regular</h2>
-        <p style="font-family: 'Gotham'; font-weight: normal;">
-            The quick brown fox jumps over the lazy dog. 0123456789
-        </p>
-    </div>
-
-    <div class="font-sample">
-        <h2>Gotham - Bold</h2>
-        <p style="font-family: 'Gotham'; font-weight: bold;">
-            The quick brown fox jumps over the lazy dog. 0123456789
-        </p>
-    </div>
-
-    <div class="font-sample">
-        <h2>Gotham SSm - Regular</h2>
-        <p style="font-family: 'Gotham SSm'; font-weight: normal;">
-            The quick brown fox jumps over the lazy dog. 0123456789
-        </p>
-    </div>
-
-    <div class="font-sample">
-        <h2>Gotham SSm - Bold</h2>
-        <p style="font-family: 'Gotham SSm'; font-weight: bold;">
-            The quick brown fox jumps over the lazy dog. 0123456789
-        </p>
-    </div>
+    <!-- Adicione mais seções para outras variações -->
 </body>
 </html>
