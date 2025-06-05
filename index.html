@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Guia Visual Decopa: Fontes & Paleta</title>
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts.css">
   <style>
     body {
       font-family: Gotham, Arial, sans-serif;
@@ -29,7 +28,61 @@
       font-family: 'Contralto Big', serif;
       font-weight: normal;
     }
-    /* Restante do CSS original mantido */
+    .font-section {
+      background: #fff;
+      margin-bottom: 32px;
+      padding: 20px 26px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(146,123,105,0.08);
+    }
+    .font-sample {
+      margin-bottom: 10px;
+      padding: 10px 0 10px 0;
+      border-bottom: 1px solid #e5dbd1;
+    }
+    .font-sample:last-child { border-bottom: none; }
+    .font-sample p { margin: 0; font-size: 20px; }
+    /* Paleta */
+    .color-palette-section {
+      background: #fff;
+      margin-top: 32px;
+      padding: 28px 14px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(146,123,105,0.08);
+    }
+    .main-colors {
+      margin-bottom: 18px;
+    }
+    .main-colors span {
+      display:inline-block; border-radius:5px; font-weight:bold; padding:3px 15px; margin-right:16px;
+    }
+    .main-dark { background:#927B69; color:#fff;}
+    .main-light { background:#B6A192; color:#222;}
+    table.palette { border-collapse:separate; border-spacing:6px 8px; width:100%; font-size: 14px;}
+    table.palette th, table.palette td { text-align:center; border-radius:4px; }
+    table.palette th { font-weight:bold; background:#f4ede6; }
+    table.palette td.shade-name { text-align:right; font-size:14px; font-family:monospace; background:transparent; }
+    .swatch {
+      display: block;
+      height: 22px;
+      width: 40px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin: 0 auto 2px auto;
+    }
+    .code { font-family: monospace; background:#f6f2ed; border-radius:4px; padding:1px 4px; font-size: 0.93em;}
+    /* Tipografia */
+    .typescale-section {background: #fff;padding: 28px 16px;margin-top:36px; border-radius:10px; box-shadow:0 4px 20px rgba(146,123,105,0.06);}
+    .typescale-table { width: 100%; border-collapse: collapse; margin:auto; }
+    .typescale-table th,.typescale-table td { padding:8px 6px; text-align:left; font-size:15px; }
+    .typescale-table th { background:#f6f2ed; }
+    .typescale-table tr { border-bottom:1px solid #ede5db;}
+    .typescale-table .font-demo-cell {min-width:140px;}
+    @media (max-width:600px){
+      .font-sample p { font-size:16px;}
+      .typescale-table, .palette { font-size:13px;}
+      th,td {font-size:12px;}
+    }
   </style>
 </head>
 <body>
@@ -68,7 +121,6 @@
         </tr>
       </thead>
       <tbody>
-        <!-- Tabela de escala tipográfica original -->
         <tr>
           <td>H1</td>
           <td>48px / 3rem</td>
@@ -76,7 +128,48 @@
           <td>Contralto Big Regular</td>
           <td class="font-demo-cell"><span style="font-family:'Contralto Big';font-size:48px;">Título Exemplo</span></td>
         </tr>
-        <!-- Restante das linhas mantidas -->
+        <tr>
+          <td>H2</td>
+          <td>36px / 2.25rem</td>
+          <td>26px / 1.62rem</td>
+          <td>Contralto Big Regular</td>
+          <td class="font-demo-cell"><span style="font-family:'Contralto Big'; font-size:36px;">Título Secundário</span></td>
+        </tr>
+        <tr>
+          <td>H3</td>
+          <td>28px / 1.75rem</td>
+          <td>22px / 1.38rem</td>
+          <td>Contralto Big Regular</td>
+          <td class="font-demo-cell"><span style="font-family:'Contralto Big'; font-size:28px;">Título Terciário</span></td>
+        </tr>
+        <tr>
+          <td>Body / Large</td>
+          <td>20px / 1.25rem</td>
+          <td>18px / 1.13rem</td>
+          <td>Gotham Regular</td>
+          <td class="font-demo-cell"><span style="font-family:'Gotham'; font-size:20px;">Texto grande exemplo</span></td>
+        </tr>
+        <tr>
+          <td>Parágrafo</td>
+          <td>16px / 1rem</td>
+          <td>15px / 0.94rem</td>
+          <td>Gotham Regular</td>
+          <td class="font-demo-cell"><span style="font-family:'Gotham'; font-size:16px;">Texto padrão exemplo</span></td>
+        </tr>
+        <tr>
+          <td>Small / Complementar</td>
+          <td>13px / 0.81rem</td>
+          <td>13px / 0.81rem</td>
+          <td>Gotham Regular</td>
+          <td class="font-demo-cell"><span style="font-family:'Gotham'; font-size:13px;">Texto auxiliar</span></td>
+        </tr>
+        <tr>
+          <td>Botão</td>
+          <td>15px / 0.94rem</td>
+          <td>14px / 0.88rem</td>
+          <td>Gotham Bold</td>
+          <td class="font-demo-cell"><span style="font-family:'Gotham'; font-weight:bold; font-size:15px;">Comprar</span></td>
+        </tr>
       </tbody>
     </table>
     <ul>
@@ -86,7 +179,7 @@
     </ul>
   </section>
 
-  <!-- PALETA DE CORES -->
+  <!-- PALETA DE CORES (PARTE 1/2) -->
   <section class="color-palette-section">
     <h2>Paleta de Cores Oficial</h2>
     <div class="main-colors">
@@ -101,136 +194,443 @@
         <span class="code">HSL(25,22%,65%)</span>
       </span>
     </div>
-    <!-- Tabela de paleta de cores original -->
-  </section>
-  
-  <!-- ÍCONES E OUTRAS DIRETRIZES -->
-  <section style="background:#fff;padding:30px 16px;margin-top:36px;border-radius:10px;box-shadow:0 4px 20px rgba(146,123,105,0.07);">
-    <h2>Guia de espaçamento, bordas, grid e ícones</h2>
-
-    <!-- Seções de espaçamento, bordas, grid mantidas -->
-
-    <h3 style="margin-top:26px;">Escala de Ícones no E-commerce</h3>
-    <table style="width:100%;max-width:440px;border-collapse:collapse;font-size:16px;">
-      <thead>
-        <tr style="background:#f6f2ed;">
-          <th>Token</th><th>Pixels</th><th>REM</th><th>Uso principal</th>
+    <div style="overflow-x:auto;">
+      <table class="palette">
+        <tr>
+          <th></th>
+          <th>50</th><th>100</th><th>200</th><th>300</th>
+          <th>400</th> <th>500</th><th>600</th><th>700</th>
+          <th>800</th><th>900</th><th>950</th>
         </tr>
-      </thead>
-      <tbody>
-        <tr><td>xs</td><td>16px</td><td>1rem</td><td>Barras, botões pequenos</td></tr>
-        <tr><td>sm</td><td>20px</td><td>1.25rem</td><td>Lista/grid de produtos</td></tr>
-        <tr><td>md</td><td>24px</td><td>1.5rem</td><td>Cabeçalho, quick actions</td></tr>
-        <tr><td>lg</td><td>32px</td><td>2rem</td><td>Cards de destaque</td></tr>
-        <tr><td>xl</td><td>48px</td><td>3rem</td><td>Banners/hero section</td></tr>
-      </tbody>
-    </table>
-    <div style="display:flex;gap:16px;align-items:center;margin-top:14px;">
-      <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/shopping-cart.svg" alt="Ícone de Carrinho (16px)" width="16" height="16">
-      <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/shopping-cart.svg" alt="Ícone de Carrinho (24px)" width="24" height="24">
-      <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/shopping-cart.svg" alt="Ícone de Carrinho (32px)" width="32" height="32">
-      <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/shopping-cart.svg" alt="Ícone de Carrinho (48px)" width="48" height="48">
-      <span style="font-size:14px;color:#666;">Ícones do Flaticon em vários tamanhos e com cor institucional.</span>
+        <tr>
+          <td class="shade-name">camel seaweed</td>
+          <td><div class="swatch" style="background:#F6F2ED"></div>#F6F2ED<br><span class="code">rgb(246,242,237)</span><br><span class="code">hsl(33,33%,95%)</span></td>
+          <td><div class="swatch" style="background:#F0E3D6"></div>#F0E3D6<br><span class="code">rgb(240,227,214)</span><br><span class="code">hsl(28,39%,89%)</span></td>
+          <td><div class="swatch" style="background:#DECBB5"></div>#DECBB5<br><span class="code">rgb(222,203,181)</span><br><span class="code">hsl(32,32%,79%)</span></td>
+          <td><div class="swatch" style="background:#C8AF90"></div>#C8AF90<br><span class="code">rgb(200,175,144)</span><br><span class="code">hsl(34,33%,67%)</span></td>
+          <td><div class="swatch" style="background:#B49770"></div>#B49770<br><span class="code">rgb(180,151,112)</span><br><span class="code">hsl(34,30%,57%)</span></td>
+          <td><div class="swatch" style="background:#A4834E"></div>#A4834E<br><span class="code">rgb(164,131,78)</span><br><span class="code">hsl(37,36%,47%)</span></td>
+          <td><div class="swatch" style="background:#92734A"></div>#92734A<br><span class="code">rgb(146,115,74)</span><br><span class="code">hsl(36,33%,43%)</span></td>
+          <td><div class="swatch" style="background:#7B5C37"></div>#7B5C37<br><span class="code">rgb(123,92,55)</span><br><span class="code">hsl(34,38%,35%)</span></td>
+          <td><div class="swatch" style="background:#5E4024"></div>#5E4024<br><span class="code">rgb(94,64,36)</span><br><span class="code">hsl(28,45%,25%)</span></td>
+          <td><div class="swatch" style="background:#382312"></div>#382312<br><span class="code">rgb(56,35,18)</span><br><span class="code">hsl(29,52%,15%)</span></td>
+          <td><div class="swatch" style="background:#1E1208"></div>#1E1208<br><span class="code">rgb(30,18,8)</span><br><span class="code">hsl(28,58%,7%)</span></td>
+        </tr>
+        <tr>
+          <td class="shade-name">chamomile seaweed</td>
+          <td><div class="swatch" style="background:#F4EDE6"></div>#F4EDE6<br><span class="code">rgb(244,237,230)</span><br><span class="code">hsl(28,32%,93%)</span></td>
+          <td><div class="swatch" style="background:#E0D5C1"></div>#E0D5C1<br><span class="code">rgb(224,213,193)</span><br><span class="code">hsl(35,29%,82%)</span></td>
+          <td><div class="swatch" style="background:#C9B393"></div>#C9B393<br><span class="code">rgb(201,179,147)</span><br><span class="code">hsl(36,30%,68%)</span></td>
+          <td><div class="swatch" style="background:#B79A70"></div>#B79A70<br><span class="code">rgb(183,154,112)</span><br><span class="code">hsl(35,30%,58%)</span></td>
+          <td><div class="swatch" style="background:#A8834D"></div>#A8834D<br><span class="code">rgb(168,131,77)</span><br><span class="code">hsl(35,37%,48%)</span></td>
+          <td><div class="swatch" style="background:#94713F"></div>#94713F<br><span class="code">rgb(148,113,63)</span><br><span class="code">hsl(37,40%,41%)</span></td>
+          <td><div class="swatch" style="background:#805D34"></div>#805D34<br><span class="code">rgb(128,93,52)</span><br><span class="code">hsl(34,42%,35%)</span></td>
+          <td><div class="swatch" style="background:#674625"></div>#674625<br><span class="code">rgb(103,70,37)</span><br><span class="code">hsl(32,47%,28%)</span></td>
+          <td><div class="swatch" style="background:#463015"></div>#463015<br><span class="code">rgb(70,48,21)</span><br><span class="code">hsl(34,53%,18%)</span></td>
+          <td><div class="swatch" style="background:#221608"></div>#221608<br><span class="code">rgb(34,22,8)</span><br><span class="code">hsl(33,62%,8%)</span></td>
+        </tr>
+        <tr>
+          <td class="shade-name">tropical seaweed</td>
+          <td><div class="swatch" style="background:#F4EDDC"></div>#F4EDDC<br><span class="code">rgb(244,237,220)</span><br><span class="code">hsl(42,51%,91%)</span></td>
+          <td><div class="swatch" style="background:#ECE0BC"></div>#ECE0BC<br><span class="code">rgb(236,224,188)</span><br><span class="code">hsl(41,55%,83%)</span></td>
+          <td><div class="swatch" style="background:#DAC48B"></div>#DAC48B<br><span class="code">rgb(218,196,139)</span><br><span class="code">hsl(44,56%,70%)</span></td>
+          <td><div class="swatch" style="background:#B79C63"></div>#B79C63<br><span class="code">rgb(183,156,99)</span><br><span class="code">hsl(41,41%,55%)</span></td>
+          <td><div class="swatch" style="background:#A7894C"></div>#A7894C<br><span class="code">rgb(167,137,76)</span><br><span class="code">hsl(41,37%,48%)</span></td>
+          <td><div class="swatch" style="background:#8A713B"></div>#8A713B<br><span class="code">rgb(138,113,59)</span><br><span class="code">hsl(41,40%,39%)</span></td>
+          <td><div class="swatch" style="background:#766132"></div>#766132<br><span class="code">rgb(118,97,50)</span><br><span class="code">hsl(41,40%,33%)</span></td>
+          <td><div class="swatch" style="background:#55471A"></div>#55471A<br><span class="code">rgb(85,71,26)</span><br><span class="code">hsl(48,53%,22%)</span></td>
+          <td><div class="swatch" style="background:#2F260B"></div>#2F260B<br><span class="code">rgb(47,38,11)</span><br><span class="code">hsl(46,62%,11%)</span></td>
+          <td><div class="swatch" style="background:#181304"></div>#181304<br><span class="code">rgb(24,19,4)</span><br><span class="code">hsl(46,71%,5%)</span></td>
+        </tr>
+        <tr>
+          <td class="shade-name">marsh seaweed</td>
+          <td><div class="swatch" style="background:#F0EADC"></div>#F0EADC<br><span class="code">rgb(240,234,220)</span><br><span class="code">hsl(44,41%,90%)</span></td>
+          <td><div class="swatch" style="background:#E9DCBC"></div>#E9DCBC<br><span class="code">rgb(233,220,188)</span><br><span class="code">hsl(42,52%,83%)</span></td>
+          <td><div class="swatch" style="background:#DBCA8E"></div>#DBCA8E<br><span class="code">rgb(219,202,142)</span><br><span class="code">hsl(47,55%,71%)</span></td>
+          <td><div class="swatch" style="background:#BFB165"></div>#BFB165<br><span class="code">rgb(191,177,101)</span><br><span class="code">hsl(49,45%,57%)</span></td>
+          <td><div class="swatch" style="background:#A29546"></div>#A29546<br><span class="code">rgb(162,149,70)</span><br><span class="code">hsl(52,39%,45%)</span></td>
+          <td><div class="swatch" style="background:#8F8135"></div>#8F8135<br><span class="code">rgb(143,129,53)</span><br><span class="code">hsl(52,46%,38%)</span></td>
+          <td><div class="swatch" style="background:#6F6327"></div>#6F6327<br><span class="code">rgb(111,99,39)</span><br><span class="code">hsl(51,48%,29%)</span></td>
+          <td><div class="swatch" style="background:#544B1A"></div>#544B1A<br><span class="code">rgb(84,75,26)</span><br><span class="code">hsl(50,53%,22%)</span></td>
+          <td><div class="swatch" style="background:#38320C"></div>#38320C<br><span class="code">rgb(56,50,12)</span><br><span class="code">hsl(52,63%,13%)</span></td>
+          <td><div class="swatch" style="background:#181706"></div>#181706<br><span class="code">rgb(24,23,6)</span><br><span class="code">hsl(56,61%,6%)</span></td>
+        </tr>
+        <tr>
+          <td class="shade-name">sand tan</td>
+          <td><div class="swatch" style="background:#F7EFE6"></div>#F7EFE6<br><span class="code">rgb(247,239,230)</span><br><span class="code">hsl(32,49%,93%)</span></td>
+          <td><div class="swatch" style="background:#EEE1CE"></div>#EEE1CE<br><span class="code">rgb(238,225,206)</span><br><span class="code">hsl(36,51%,87%)</span></td>
+          <td><div class="swatch" style="background:#E1CBA9"></div>#E1CBA9<br><span class="code">rgb(225,203,169)</span><br><span class="code">hsl(36,48%,77%)</span></td>
+          <td><div class="swatch" style="background:#D8B98B"></div>#D8B98B<br><span class="code">rgb(216,185,139)</span><br><span class="code">hsl(35,54%,69%)</span></td>
+          <td><div class="swatch" style="background:#BB9258"></div>#BB9258<br><span class="code">rgb(187,146,88)</span><br><span class="code">hsl(36,45%,54%)</span></td>
+          <td><div class="swatch" style="background:#937142"></div>#937142<br><span class="code">rgb(147,113,66)</span><br><span class="code">hsl(35,38%,42%)</span></td>
+          <td><div class="swatch" style="background:#806033"></div>#806033<br><span class="code">rgb(128,96,51)</span><br><span class="code">hsl(36,43%,35%)</span></td>
+          <td><div class="swatch" style="background:#6F5226"></div>#6F5226<br><span class="code">rgb(111,82,38)</span><br><span class="code">hsl(34,49%,29%)</span></td>
+          <td><div class="swatch" style="background:#4E3B13"></div>#4E3B13<br><span class="code">rgb(78,59,19)</span><br><span class="code">hsl(40,61%,19%)</span></td>
+          <td><div class="swatch" style="background:#241B0A"></div>#241B0A<br><span class="code">rgb(36,27,10)</span><br><span class="code">hsl(37,58%,9%)</span></td>
+        </tr>
+        <tr>
+          <td class="shade-name">gold leather</td>
+          <td><div class="swatch" style="background:#F8EFEA"></div>#F8EFEA<br><span class="code">rgb(248,239,234)</span><br><span class="code">hsl(24,47%,94%)</span></td>
+          <td><div class="swatch" style="background:#F0DCCD"></div>#F0DCCD<br><span class="code">rgb(240,220,205)</span><br><span class="code">hsl(28,53%,87%)</span></td>
+          <td><div class="swatch" style="background:#E1B998"></div>#E1B998<br><span class="code">rgb(225,185,152)</span><br><span class="code">hsl(30,54%,74%)</span></td>
+          <td><div class="swatch" style="background:#CBA778"></div>#CBA778<br><span class="code">rgb(203,167,120)</span><br><span class="code">hsl(36,44%,63%)</span></td>
+          <td><div class="swatch" style="background:#B68B54"></div>#B68B54<br><span class="code">rgb(182,139,84)</span><br><span class="code">hsl(33,38%,52%)</span></td>
+          <td><div class="swatch" style="background:#97704D"></div>#97704D<br><span class="code">rgb(151,112,77)</span><br><span class="code">hsl(27,32%,45%)</span></td>
+          <td><div class="swatch" style="background:#7E5D3F"></div>#7E5D3F<br><span class="code">rgb(126,93,63)</span><br><span class="code">hsl(28,34%,37%)</span></td>
+          <td><div class="swatch" style="background:#67482E"></div>#67482E<br><span class="code">rgb(103,72,46)</span><br><span class="code">hsl(27,38%,29%)</span></td>
+          <td><div class="swatch" style="background:#46301C"></div>#46301C<br><span class="code">rgb(70,48,28)</span><br><span class="code">hsl(30,43%,19%)</span></td>
+          <td><div class="swatch" style="background:#1C1408"></div>#1C1408<br><span class="code">rgb(28,20,8)</span><br><span class="code">hsl(35,55%,7%)</span></td>
+        </tr>
+        <tr>
+          <td class="shade-name">leather</td>
+          <td><div class="swatch" style="background:#EFE4DD"></div>#EFE4DD<br><span class="code">rgb(239,228,221)</span><br><span class="code">hsl(24,31%,90%)</span></td>
+          <td><div class="swatch" style="background:#E8D7CE"></div>#E8D7CE<br><span class="code">rgb(232,215,206)</span><br><span class="code">hsl(24,32%,86%)</span></td>
+          <td><div class="swatch" style="background:#DFBCA4"></div>#DFBCA4<br><span class="code">rgb(223,188,164)</span><br><span class="code">hsl(23,46%,76%)</span></td>
+          <td><div class="swatch" style="background:#C69D77"></div>#C69D77<br><span class="code">rgb(198,157,119)</span><br><span class="code">hsl(28,39%,62%)</span></td>
+          <td><div class="swatch" style="background:#AB7E53"></div>#AB7E53<br><span class="code">rgb(171,126,83)</span><br><span class="code">hsl(29,36%,50%)</span></td>
+          <td><div class="swatch" style="background:#916A3E"></div>#916A3E<br><span class="code">rgb(145,106,62)</span><br><span class="code">hsl(31,40%,41%)</span></td>
+          <td><div class="swatch" style="background:#7A5630"></div>#7A5630<br><span class="code">rgb(122,86,48)</span><br><span class="code">hsl(31,43%,33%)</span></td>
+          <td><div class="swatch" style="background:#5C3F20"></div>#5C3F20<br><span class="code">rgb(92,63,32)</span><br><span class="code">hsl(31,49%,24%)</span></td>
+          <td><div class="swatch" style="background:#332310"></div>#332310<br><span class="code">rgb(51,35,16)</span><br><span class="code">hsl(31,53%,13%)</span></td>
+          <td><div class="swatch" style="background:#1B1108"></div>#1B1108<br><span class="code">rgb(27,17,8)</span><br><span class="code">hsl(29,56%,7%)</span></td>
+        </tr>
+            <tr>
+          <td class="shade-name">chestnut</td>
+          <td><div class="swatch" style="background:#EFE2DD"></div>#EFE2DD<br><span class="code">rgb(239,226,221)</span><br><span class="code">hsl(17,31%,90%)</span></td>
+          <td><div class="swatch" style="background:#E4CEC9"></div>#E4CEC9<br><span class="code">rgb(228,206,201)</span><br><span class="code">hsl(18,30%,84%)</span></td>
+          <td><div class="swatch" style="background:#D5B4AA"></div>#D5B4AA<br><span class="code">rgb(213,180,170)</span><br><span class="code">hsl(18,29%,75%)</span></td>
+          <td><div class="swatch" style="background:#B18C81"></div>#B18C81<br><span class="code">rgb(177,140,129)</span><br><span class="code">hsl(17,26%,60%)</span></td>
+          <td><div class="swatch" style="background:#976347"></div>#976347<br><span class="code">rgb(151,99,71)</span><br><span class="code">hsl(23,36%,44%)</span></td>
+          <td><div class="swatch" style="background:#7B4C2D"></div>#7B4C2D<br><span class="code">rgb(123,76,45)</span><br><span class="code">hsl(25,47%,33%)</span></td>
+          <td><div class="swatch" style="background:#683820"></div>#683820<br><span class="code">rgb(104,56,32)</span><br><span class="code">hsl(21,53%,27%)</span></td>
+          <td><div class="swatch" style="background:#4A2717"></div>#4A2717<br><span class="code">rgb(74,39,23)</span><br><span class="code">hsl(20,52%,19%)</span></td>
+          <td><div class="swatch" style="background:#24130B"></div>#24130B<br><span class="code">rgb(36,19,11)</span><br><span class="code">hsl(21,54%,9%)</span></td>
+          <td><div class="swatch" style="background:#120906"></div>#120906<br><span class="code">rgb(18,9,6)</span><br><span class="code">hsl(18,50%,5%)</span></td>
+        </tr>
+        <tr>
+          <td class="shade-name">sunset</td>
+          <td><div class="swatch" style="background:#F3E3E0"></div>#F3E3E0<br><span class="code">rgb(243,227,224)</span><br><span class="code">hsl(7,36%,91%)</span></td>
+          <td><div class="swatch" style="background:#E2C7C1"></div>#E2C7C1<br><span class="code">rgb(226,199,193)</span><br><span class="code">hsl(12,35%,82%)</span></td>
+          <td><div class="swatch" style="background:#D3B2A6"></div>#D3B2A6<br><span class="code">rgb(211,178,166)</span><br><span class="code">hsl(20,37%,74%)</span></td>
+          <td><div class="swatch" style="background:#B6938A"></div>#B6938A<br><span class="code">rgb(182,147,138)</span><br><span class="code">hsl(13,23%,63%)</span></td>
+          <td><div class="swatch" style="background:#936962"></div>#936962<br><span class="code">rgb(147,105,98)</span><br><span class="code">hsl(8,21%,48%)</span></td>
+          <td><div class="swatch" style="background:#814E4B"></div>#814E4B<br><span class="code">rgb(129,78,75)</span><br><span class="code">hsl(3,27%,40%)</span></td>
+          <td><div class="swatch" style="background:#6A3937"></div>#6A3937<br><span class="code">rgb(106,57,55)</span><br><span class="code">hsl(2,31%,32%)</span></td>
+          <td><div class="swatch" style="background:#4B2726"></div>#4B2726<br><span class="code">rgb(75,39,38)</span><br><span class="code">hsl(1,32%,22%)</span></td>
+          <td><div class="swatch" style="background:#221111"></div>#221111<br><span class="code">rgb(34,17,17)</span><br><span class="code">hsl(0,33%,10%)</span></td>
+          <td><div class="swatch" style="background:#11090A"></div>#11090A<br><span class="code">rgb(17,9,10)</span><br><span class="code">hsl(348,30%,5%)</span></td>
+        </tr>
+        <tr>
+          <td class="shade-name">moss green</td>
+          <td><div class="swatch" style="background:#EFF3DE"></div>#EFF3DE<br><span class="code">rgb(239,243,222)</span><br><span class="code">hsl(71,49%,91%)</span></td>
+          <td><div class="swatch" style="background:#E8EBC2"></div>#E8EBC2<br><span class="code">rgb(232,235,194)</span><br><span class="code">hsl(66,48%,84%)</span></td>
+          <td><div class="swatch" style="background:#D8DA9A"></div>#D8DA9A<br><span class="code">rgb(216,218,154)</span><br><span class="code">hsl(61,54%,73%)</span></td>
+          <td><div class="swatch" style="background:#BEC762"></div>#BEC762<br><span class="code">rgb(190,199,98)</span><br><span class="code">hsl(66,50%,58%)</span></td>
+          <td><div class="swatch" style="background:#9CAD3C"></div>#9CAD3C<br><span class="code">rgb(156,173,60)</span><br><span class="code">hsl(69,49%,46%)</span></td>
+          <td><div class="swatch" style="background:#7C9233"></div>#7C9233<br><span class="code">rgb(124,146,51)</span><br><span class="code">hsl(74,48%,39%)</span></td>
+          <td><div class="swatch" style="background:#567037"></div>#567037<br><span class="code">rgb(86,112,55)</span><br><span class="code">hsl(86,34%,33%)</span></td>
+          <td><div class="swatch" style="background:#415624"></div>#415624<br><span class="code">rgb(65,86,36)</span><br><span class="code">hsl(89,41%,24%)</span></td>
+          <td><div class="swatch" style="background:#283511"></div>#283511<br><span class="code">rgb(40,53,17)</span><br><span class="code">hsl(78,52%,14%)</span></td>
+          <td><div class="swatch" style="background:#171C08"></div>#171C08<br><span class="code">rgb(23,28,8)</span><br><span class="code">hsl(73,56%,7%)</span></td>
+        </tr>
+        <tr>
+          <td class="shade-name">leather green</td>
+          <td><div class="swatch" style="background:#F1EEE1"></div>#F1EEE1<br><span class="code">rgb(241,238,225)</span><br><span class="code">hsl(47,36%,91%)</span></td>
+          <td><div class="swatch" style="background:#E5E2CC"></div>#E5E2CC<br><span class="code">rgb(229,226,204)</span><br><span class="code">hsl(48,36%,85%)</span></td>
+          <td><div class="swatch" style="background:#CECDA7"></div>#CECDA7<br><span class="code">rgb(206,205,167)</span><br><span class="code">hsl(59,34%,73%)</span></td>
+          <td><div class="swatch" style="background:#B4B280"></div>#B4B280<br><span class="code">rgb(180,178,128)</span><br><span class="code">hsl(58,29%,60%)</span></td>
+          <td><div class="swatch" style="background:#8B964B"></div>#8B964B<br><span class="code">rgb(139,150,75)</span><br><span class="code">hsl(68,34%,44%)</span></td>
+          <td><div class="swatch" style="background:#6D733D"></div>#6D733D<br><span class="code">rgb(109,115,61)</span><br><span class="code">hsl(68,31%,35%)</span></td>
+          <td><div class="swatch" style="background:#54572B"></div>#54572B<br><span class="code">rgb(84,87,43)</span><br><span class="code">hsl(63,34%,25%)</span></td>
+          <td><div class="swatch" style="background:#393C1A"></div>#393C1A<br><span class="code">rgb(57,60,26)</span><br><span class="code">hsl(67,39%,17%)</span></td>
+          <td><div class="swatch" style="background:#21210B"></div>#21210B<br><span class="code">rgb(33,33,11)</span><br><span class="code">hsl(60,50%,8%)</span></td>
+          <td><div class="swatch" style="background:#0F1006"></div>#0F1006<br><span class="code">rgb(15,16,6)</span><br><span class="code">hsl(70,45%,4%)</span></td>
+        </tr>
+        <tr>
+          <td class="shade-name">green leather</td>
+          <td><div class="swatch" style="background:#EEE6E2"></div>#EEE6E2<br><span class="code">rgb(238,230,226)</span><br><span class="code">hsl(19,27%,91%)</span></td>
+          <td><div class="swatch" style="background:#E1D8D2"></div>#E1D8D2<br><span class="code">rgb(225,216,210)</span><br><span class="code">hsl(25,22%,85%)</span></td>
+          <td><div class="swatch" style="background:#D7C5B8"></div>#D7C5B8<br><span class="code">rgb(215,197,184)</span><br><span class="code">hsl(27,27%,78%)</span></td>
+          <td><div class="swatch" style="background:#BBA89D"></div>#BBA89D<br><span class="code">rgb(187,168,157)</span><br><span class="code">hsl(25,21%,67%)</span></td>
+          <td><div class="swatch" style="background:#957E71"></div>#957E71<br><span class="code">rgb(149,126,113)</span><br><span class="code">hsl(23,15%,51%)</span></td>
+          <td><div class="swatch" style="background:#756053"></div>#756053<br><span class="code">rgb(117,96,83)</span><br><span class="code">hsl(22,17%,39%)</span></td>
+          <td><div class="swatch" style="background:#594934"></div>#594934<br><span class="code">rgb(89,73,52)</span><br><span class="code">hsl(34,28%,28%)</span></td>
+          <td><div class="swatch" style="background:#3B2F1E"></div>#3B2F1E<br><span class="code">rgb(59,47,30)</span><br><span class="code">hsl(36,33%,17%)</span></td>
+          <td><div class="swatch" style="background:#1F1710"></div>#1F1710<br><span class="code">rgb(31,23,16)</span><br><span class="code">hsl(30,31%,9%)</span></td>
+          <td><div class="swatch" style="background:#0B0805"></div>#0B0805<br><span class="code">rgb(11,8,5)</span><br><span class="code">hsl(30,37%,3%)</span></td>
+        </tr>
+      </table>
     </div>
-  </section>
-  
-  <!-- ÍCONES (Padrão Flaticon: Thin & Straight) -->
-  <section style="background:#fff;padding:30px 16px;margin-top:36px;border-radius:10px;box-shadow:0 4px 20px rgba(146,123,105,0.07);">
-    <h2>Ícones (Padrão Flaticon: Thin & Straight)</h2>
-    <p>Para o design institucional, utilize ícones finos, de canto reto e sem preenchimento, no conceito "uicon/thin/straight" do <a href="https://www.flaticon.com/br/icon-fonts-mas-baixados?weight=thin&corner=straight&type=uicon" target="_blank" style="color:#927B69;text-decoration:underline;">Flaticon Uicon</a>. Baixe os SVGs e use sempre nesses formatos:</p>
-
-    <table style="width:100%;max-width:540px;border-collapse:collapse;font-size:16px;margin-bottom:18px;">
-      <thead>
-        <tr style="background:#f6f2ed;">
-          <th>Ícone</th>
-          <th>Função no e-commerce</th>
-          <th>SVG Exemplo (#927B69)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>shopping-cart</td>
-          <td>Carrinho de compras</td>
-          <td>
-            <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/shopping-cart.svg" alt="Shopping Cart Icon" width="28" height="28">
-          </td>
-        </tr>
-        <tr>
-          <td>user</td>
-          <td>Minha conta/Perfil</td>
-          <td>
-            <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/user.svg" alt="User Icon" width="28" height="28">
-          </td>
-        </tr>
-        <tr>
-          <td>heart</td>
-          <td>Favoritos</td>
-          <td>
-            <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/heart.svg" alt="Heart Icon" width="28" height="28">
-          </td>
-        </tr>
-        <tr>
-          <td>search</td>
-          <td>Busca</td>
-          <td>
-            <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/search.svg" alt="Search Icon" width="28" height="28">
-          </td>
-        </tr>
-        <tr>
-          <td>bag</td>
-          <td>Sacola/Compras</td>
-          <td>
-            <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/bag.svg" alt="Bag Icon" width="28" height="28">
-          </td>
-        </tr>
-        <tr>
-          <td>credit-card</td>
-          <td>Pagamento</td>
-          <td>
-            <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/credit-card.svg" alt="Credit Card Icon" width="28" height="28">
-          </td>
-        </tr>
-        <tr>
-          <td>truck</td>
-          <td>Entrega/Frete</td>
-          <td>
-            <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/truck.svg" alt="Truck Icon" width="28" height="28">
-          </td>
-        </tr>
-        <tr>
-          <td>tag</td>
-          <td>Promo/Ofertas</td>
-          <td>
-            <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/tag.svg" alt="Tag Icon" width="28" height="28">
-          </td>
-        </tr>
-        <tr>
-          <td>logout</td>
-          <td>Sair</td>
-          <td>
-            <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/logout.svg" alt="Logout Icon" width="28" height="28">
-          </td>
-        </tr>
-        <tr>
-          <td>home</td>
-          <td>Início</td>
-          <td>
-            <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/home.svg" alt="Home Icon" width="28" height="28">
-          </td>
-        </tr>
-        <tr>
-          <td>menu</td>
-          <td>Menu/Categorias</td>
-          <td>
-            <img src="https://raw.githubusercontent.com/alexandreviolamelo/decopa/main/svg/menu.svg" alt="Menu Icon" width="28" height="28">
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <p style="font-size:14px">
-      <b>Dica:</b> Use <b>SVG inline</b> ou instale <b>Flaticon Uicon Thin Straight</b> como fonte web/icone-font.<br>
-      Baixe os ícones direto em <a href="https://www.flaticon.com/br/icon-fonts-mas-baixados?weight=thin&corner=straight&type=uicon" style="color:#927B69;text-decoration:underline;">Flaticon Uicon</a> para o máximo de consistência!
+    <p style="font-size:0.97em;color:#666;margin-top:10px;">
+      Cada cor apresenta o código HEX, RGB e HSL agrupados para facilitar a aplicação no código.
     </p>
   </section>
+ <section style="background:#fff;padding:30px 16px;margin-top:36px;border-radius:10px;box-shadow:0 4px 20px rgba(146,123,105,0.07);">
+  <h2>Guia de espaçamento, bordas, grid e ícones</h2>
+
+  <h3 style="margin-top:16px;">Escala de Espaçamento (Spacing)</h3>
+  <table style="width:100%;max-width:600px;border-collapse:collapse;font-size:16px;">
+    <thead>
+      <tr style="background:#f6f2ed;">
+        <th>Token</th><th>Pixels</th><th>REM</th><th>Uso sugerido</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>xs</td><td>4px</td><td>0.25rem</td><td>Divisores, labels</td></tr>
+      <tr><td>sm</td><td>8px</td><td>0.5rem</td><td>Padding botões pequenos, listagem compacta</td></tr>
+      <tr><td>md</td><td>12px</td><td>0.75rem</td><td>Entre ícones/texto, cards, filtros</td></tr>
+      <tr><td>base</td><td>16px</td><td>1rem</td><td>Padding padrão de cards/inputs/botões</td></tr>
+      <tr><td>lg</td><td>24px</td><td>1.5rem</td><td>Entre seções e blocos principais</td></tr>
+      <tr><td>xl</td><td>32px</td><td>2rem</td><td>Espaço entre grupos de seções</td></tr>
+      <tr><td>xxl</td><td>48px</td><td>3rem</td><td>Banners e margens amplas</td></tr>
+    </tbody>
+  </table>
+  <div style="display:flex;gap:18px;align-items:end;margin-top:18px">
+    <div style="background:#B6A192;height:12px;width:64px;border-radius:2px;margin-bottom:10px"></div>
+    <div style="background:#B6A192;height:16px;width:96px;border-radius:2px;margin-bottom:16px"></div>
+    <div style="background:#B6A192;height:24px;width:128px;border-radius:2px;margin-bottom:24px"></div>
+    <div style="padding:8px 16px;background:#927B69;color:#fff;border-radius:8px;box-shadow:0 1px 4px #927B6920;font-family:'Gotham';font-size:16px;">
+      Exemplo de botão 16px spacing
+    </div>
+  </div>
+  <span style="font-size:13px;color:#666;">
+    Acima: barras ilustrando xs (4px), base (16px), lg (24px) e botão com padding base (16px).
+  </span>
+
+  <h3 style="margin-top:26px;">Raios de Bordas (Border-radius)</h3>
+  <table style="width:100%;max-width:425px;border-collapse:collapse;font-size:16px;">
+    <thead>
+      <tr style="background:#f6f2ed;">
+        <th>Token</th><th>Pixels</th><th>Uso típico</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>xs</td><td>2px</td><td>Tags, inputs</td></tr>
+      <tr><td>sm</td><td>4px</td><td>Botões, campos</td></tr>
+      <tr><td>md</td><td>8px</td><td>Cards, listas</td></tr>
+      <tr><td>lg</td><td>16px</td><td>Blocos destacados, banners</td></tr>
+      <tr><td>circle</td><td>50%</td><td>Avatares, ícones circulares</td></tr>
+    </tbody>
+  </table>
+  <div style="display:flex;gap:20px;align-items:end;margin-top:14px;">
+    <div style="background:#B6A192;width:60px;height:36px;border-radius:2px;display:flex;align-items:center;justify-content:center;">2px</div>
+    <div style="background:#927B69;width:60px;height:36px;color:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;">8px</div>
+    <div style="background:#B6A192;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;">50%</div>
+    <div style="background:#fff;border:2px solid #B6A192;padding:10px 24px;border-radius:4px;font-size:14px;font-family:Gotham;">Botão sm</div>
+  </div>
+  <span style="font-size:13px;color:#666;">
+    Acima: raios xs/sm/md e círculos aplicados em cards/botões/avatar.
+  </span>
+
+  <h3 style="margin-top:26px;">Grid Responsivo</h3>
+  <ul>
+    <li><b>Desktop:</b> 12 colunas — Gutter: 24px — Margem: 32px</li>
+    <li><b>Tablet:</b> 8 colunas — Gutter: 16px — Margem: 16px</li>
+    <li><b>Mobile:</b> 4 colunas — Gutter: 8px — Margem: 8/16px</li>
+  </ul>
+  <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:24px;background:#f6f2ed;padding:12px;border-radius:10px;margin-bottom:8px;">
+    <div style="background:#B6A192;grid-column:span 3;border-radius:8px;height:24px;display:flex;align-items:center;justify-content:center;color:#fff;">Col 3</div>
+    <div style="background:#927B69;grid-column:span 6;border-radius:8px;height:24px;display:flex;align-items:center;justify-content:center;color:#fff;">Col 6</div>
+    <div style="background:#c8af90;grid-column:span 3;border-radius:8px;height:24px;display:flex;align-items:center;justify-content:center;color:#fff;">Col 3</div>
+  </div>
+  <span style="font-size:13px;color:#666;">Topo: Grid desktop (12 col.), ajuste para 8/4 col. em tablet/mobile conforme tela.</span>
+
+  <h3 style="margin-top:26px;">Escala de Ícones no E-commerce</h3>
+  <table style="width:100%;max-width:440px;border-collapse:collapse;font-size:16px;">
+    <thead>
+      <tr style="background:#f6f2ed;">
+        <th>Token</th><th>Pixels</th><th>REM</th><th>Uso principal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>xs</td><td>16px</td><td>1rem</td><td>Barras, botões pequenos</td></tr>
+      <tr><td>sm</td><td>20px</td><td>1.25rem</td><td>Lista/grid de produtos</td></tr>
+      <tr><td>md</td><td>24px</td><td>1.5rem</td><td>Cabeçalho, quick actions</td></tr>
+      <tr><td>lg</td><td>32px</td><td>2rem</td><td>Cards de destaque</td></tr>
+      <tr><td>xl</td><td>48px</td><td>3rem</td><td>Banners/hero section</td></tr>
+    </tbody>
+  </table>
+  <div style="display:flex;gap:16px;align-items:center;margin-top:14px;">
+    <svg width="16" height="16" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="6" cy="13" r="1.5"/><circle cx="12" cy="13" r="1.5"/>
+      <path d="M2 2h2l2 8h8l2-6H6"/>
+    </svg>
+    <svg width="24" height="24" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="20" r="2"/><circle cx="17" cy="20" r="2"/>
+      <path d="M3 5h2l4 12h10l4-8H9"/>
+    </svg>
+    <svg width="32" height="32" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="27" r="2"/><circle cx="24" cy="27" r="2"/>
+      <path d="M5 5h2l3 16h14l3-10H8"/>
+    </svg>
+    <svg width="48" height="48" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="18" cy="40" r="3"/><circle cx="36" cy="40" r="3"/>
+      <path d="M8 8h4l6 32h24l6-20H16"/>
+    </svg>
+    <span style="font-size:14px;color:#666;">Ícones do Flaticon em vários tamanhos e com cor institucional.</span>
+  </div>
+  <div style="display:flex;gap:36px;align-items:center;margin-top:24px;flex-wrap:wrap;">
+    <div style="background:#f6f2ed;padding:12px 20px;border-radius:8px;display:flex;flex-direction:column;align-items:center;">
+      <svg width="24" height="24" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="7" r="5"/>
+        <path d="M3 21c0-4 5-6 9-6s9 2 9 6"/>
+      </svg>
+      <span style="font-size:13px;margin-top:8px;">Avatar<br><span style="color:#bbb">radius: 50%</span></span>
+    </div>
+    <div style="background:#f6f2ed;padding:12px 20px;border-radius:8px;display:flex;flex-direction:column;align-items:center;">
+      <div style="background:#927B69;color:#fff;padding:8px 24px;border-radius:4px;font-family:Gotham;margin-bottom:6px;">Botão <svg width="18" height="18" style="vertical-align:middle" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M9 3v12"/></svg></div>
+      <span style="font-size:13px;">Botão sm, borda 4px, ícone no texto</span>
+    </div>
+    <div style="background:#f6f2ed;padding:12px 24px 16px 24px;border-radius:12px;display:flex;flex-direction:column;align-items:center;">
+      <div style="background:#fff;padding:12px 20px;border-radius:8px;box-shadow:0 2px 8px #927B6920;display:flex;align-items:center;gap:10px;">
+        <svg width="24" height="24" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="20" r="2"/>
+          <circle cx="17" cy="20" r="2"/>
+          <path d="M3 5h2l4 12h10l4-8H9"/>
+        </svg>
+        <div>
+          <div style="font-family:'Gotham';font-weight:600;font-size:15px;">Produto 1</div>
+          <div style="font-size:12px;color:#927B69;">em estoque</div>
+        </div>
+      </div>
+      <span style="font-size:13px;margin-top:8px;">Card produto (spacing, radius, ícone)</span>
+    </div>
+  </div>
+</section>
+  <section style="background:#fff;padding:30px 16px;margin-top:36px;border-radius:10px;box-shadow:0 4px 20px rgba(146,123,105,0.07);">
+  <h2>Ícones (Padrão Flaticon: Thin & Straight)</h2>
+  <p>Para o design institucional, utilize ícones finos, de canto reto e sem preenchimento, no conceito “uicon/thin/straight” do <a href="https://www.flaticon.com/br/icon-fonts-mas-baixados?weight=thin&corner=straight&type=uicon" target="_blank" style="color:#927B69;text-decoration:underline;">Flaticon Uicon</a>. Baixe os SVGs e use sempre nesses formatos:</p>
+
+  <table style="width:100%;max-width:540px;border-collapse:collapse;font-size:16px;margin-bottom:18px;">
+    <thead>
+      <tr style="background:#f6f2ed;">
+        <th>Ícone</th>
+        <th>Função no e-commerce</th>
+        <th>SVG Exemplo (#927B69)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>shopping-cart</td>
+        <td>Carrinho de compras</td>
+        <td>
+          <svg width="28" height="28" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="23" r="1.6"/>
+            <circle cx="21" cy="23" r="1.6"/>
+            <path d="M3 5h3l3 13h12l3-8H8"/>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td>user</td>
+        <td>Minha conta/Perfil</td>
+        <td>
+          <svg width="28" height="28" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="14" cy="9" r="5"/>
+            <path d="M5 25c0-4 5-6 9-6s9 2 9 6"/>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td>heart</td>
+        <td>Favoritos</td>
+        <td>
+          <svg width="28" height="28" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 24s-9-5.5-9-13.1C5 6.93 7.81 4 11.15 4c1.8 0 3.52 1.02 4.85 2.62C17.33 5.01 19.15 4 21 4c3.34 0 6.15 2.93 6.15 6.89C23 18.5 14 24 14 24z"/>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td>search</td>
+        <td>Busca</td>
+        <td>
+          <svg width="28" height="28" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="7"/>
+            <line x1="18" y1="18" x2="25" y2="25"/>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td>bag</td>
+        <td>Sacola/Compras</td>
+        <td>
+          <svg width="28" height="28" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="9" width="16" height="13" rx="2"/>
+            <path d="M9 9V7a5 5 0 0 1 10 0v2"/>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td>credit-card</td>
+        <td>Pagamento</td>
+        <td>
+          <svg width="28" height="28" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="8" width="20" height="12" rx="3"/>
+            <line x1="6" y1="13" x2="22" y2="13"/>
+            <line x1="8" y1="18" x2="12" y2="18"/>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td>truck</td>
+        <td>Entrega/Frete</td>
+        <td>
+          <svg width="28" height="28" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="12" width="11" height="8" rx="2"/>
+            <rect x="15" y="16" width="8" height="4" rx="1"/>
+            <circle cx="7" cy="22" r="1.5"/>
+            <circle cx="20" cy="22" r="1.5"/>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td>tag</td>
+        <td>Promo/Ofertas</td>
+        <td>
+          <svg width="28" height="28" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 14l10 10c.4.4 1 .4 1.4 0l8.2-8.2c.4-.4.4-1 0-1.4L14 4H7a2 2 0 0 0-2 2v7z"/>
+            <circle cx="9" cy="9" r="2"/>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td>logout</td>
+        <td>Sair</td>
+        <td>
+          <svg width="28" height="28" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 7v-2a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2"/>
+            <polyline points="12 16 17 21 22 16"/>
+            <line x1="17" y1="21" x2="17" y2="11"/>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td>home</td>
+        <td>Início</td>
+        <td>
+          <svg width="28" height="28" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 13L14 4l10 9"/>
+            <rect x="7" y="13" width="10" height="8" rx="2"/>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td>menu</td>
+        <td>Menu/Categorias</td>
+        <td>
+          <svg width="28" height="28" fill="none" stroke="#927B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="6" y1="9" x2="22" y2="9"/>
+            <line x1="6" y1="14" x2="22" y2="14"/>
+            <line x1="6" y1="19" x2="22" y2="19"/>
+          </svg>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="font-size:14px">
+    <b>Dica:</b> Use <b>SVG inline</b> ou instale <b>Flaticon Uicon Thin Straight</b> como fonte web/icone-font.<br>
+    Baixe os ícones direto em <a href="https://www.flaticon.com/br/icon-fonts-mas-baixados?weight=thin&corner=straight&type=uicon" style="color:#927B69;text-decoration:underline;">Flaticon Uicon</a> para o máximo de consistência!
+  </p>
+</section>
 </body>
 </html>
